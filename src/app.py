@@ -11,8 +11,7 @@ st.title('Commandes Forecaster')
 
 # "with" notation
 with st.sidebar:  
-    FLUX = st.selectbox(
-    'FLUX', FLUX)
+    FLUX = st.selectbox('FLUX', FLUX)
     forecast_date = st.date_input('Forecast Start Date')
     nb_days = st.slider('Days of forecast', 7, 30, 1)
     run_forecast = st.button('Forecast')
