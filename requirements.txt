@@ -94,7 +94,6 @@ awesome-streamlit==20200728.1
 binaryornot==0.4.4
 blinker==1.5
 cachetools==5.3.0
-certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
 chardet==5.1.0
 charset-normalizer==3.1.0
 click==8.1.3
