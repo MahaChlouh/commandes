@@ -25,8 +25,8 @@ from dateutil.relativedelta import relativedelta
 
 #To get the data
 #df = pd.read_excel('Global_Cde_sites.xlsx')
-df = pd.read_excel('Global_Cde_sites_ToTest.xlsx')
-df_test = pd.read_excel('Global_Cde_sites_Test.xlsx')
+df = pd.read_excel('src/Global_Cde_sites_ToTest.xlsx')
+df_test = pd.read_excel('src/Global_Cde_sites_Test.xlsx')
 #df_test.rename(columns = {'DATE':'date'}, inplace = True)
 
 default_start_date = datetime.today() - relativedelta(months=1)
