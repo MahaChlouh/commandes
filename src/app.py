@@ -11,7 +11,7 @@ from prophet import Prophet
 from datetime import datetime, timedelta
 from mlforecast import MLForecast
 from numba import jit
-from awesome_streamlit.shared import components
+#from awesome_streamlit.shared import components
 from lightgbm import LGBMRegressor
 from xgboost import XGBRegressor
 from sklearn.ensemble import RandomForestRegressor
@@ -63,7 +63,7 @@ def performances(y, y_hat):
 # The Dataframe by site selected
 site_df = df[(df['SITE'] == Site)]
 # The Visualization of the Original Dataframe by site selected
-st.subheader("Original DataFrame :floppy_disk:")
+st.subheader("Original DataFrame")
 st.dataframe(data=site_df, width=600, height=300)
 
 #The Visualization of the chart by route selected
@@ -214,7 +214,7 @@ if run_forecast:
 st.plotly_chart(fig)
 # Visualize the Forecast dataframe
 if run_forecast:
-    st.subheader("Forecast DataFrame :male_mage:")
+    st.subheader("Forecast DataFrame")
     st.dataframe(data=forecast_df, width=600, height=300)
     site_df_test = df_test[(df_test['SITE'] == Site)]
     compare_df = pd.merge(forecast_df, site_df_test, left_on='DATE', right_on='DATE', how='outer')
