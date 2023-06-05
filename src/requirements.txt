@@ -89,7 +89,7 @@ altair==4.2.2
 arrow==1.2.3
 attrs==22.2.0
 awesome-streamlit==20200728.1
-awesome_streamlit.shared
+awesome_streamlit.shared==23.1.2
 binaryornot==0.4.4
 blinker==1.5
 cachetools==5.3.0
